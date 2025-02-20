@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zreel</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header>
@@ -15,6 +16,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#background">Background</a></li>
                     <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -42,11 +44,12 @@
                     <img src="img/Zreel.jpeg " alt="Fzreel">
                 </div>
                 <div class="about-text">
-                    <h2>About Me</h2>
+                    <h1 class="main-about">About Me</h1>
+                    <h2 class="sub-about">Student | Creative | Developer</h2>    
                     <p>
-                        Nama saya Muhammad Fazriel Faddilah, tahun ini saya bersuia 16 tahun.
+                        Nama saya Muhammad Fazriel Faddilah, tahun ini saya bersuia 17 tahun.
                         Saya siswa dari SMK Wikrama Bogor yang mengambil kejuruan PPLG
-                        (Pengembangan Perangkat Lunak dan Gim). Selama di kejuruan ini
+                        (Pengembangan Perangkat Lunak dan Game). Selama di kejuruan ini
                         saya sudah mempelajari 3 bahasa yaitu JavaScript (JS), Cascading Style Sheet (CSS),
                         dan Hypertex Preprocessor (PHP).
                     </p>
@@ -79,7 +82,7 @@
                 <div class="project-container">
                     <div class="project-grid">
                         <div class="project-item">
-                            <img src="" alt="Project 1">
+                            <img src="img/P1.png" alt="Project 1">
                             <h3>Project 1</h3>
                             <p>Project pertama yang Fazriel buat.</p>
                         </div>
@@ -104,7 +107,7 @@
                             <p>Web Sertifikat.</p>
                         </div>
                         <div class="project-item">
-                            <img src="" alt="Project 6">
+                            <img src="img/Calc.png" alt="Project 6">
                             <h3>Kalkulator</h3>
                             <p>Kalkulator Aritmatika & Geometri</p>
                         </div>
@@ -113,7 +116,67 @@
                 <button class="project-btn">Project</button>
             </div>
         </section>
+
+        <div id="project-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3 id="modal-title"></h3>
+                <p id="modal-description"></p>
+            </div>
+        </div>
+
+        <section id="contact" class="contact">
+            <div class="contact-text">
+                <h2>Media Sosial</h2>
+                <p>
+                    Anda juga bisa melihat kehidupan sosial saya, atau beberapa
+                    pencapaian saya yang mungkin tidak ada di personal web ini,
+                    di beberapa media sosial saya.
+                </p>
+                <div class="medsos-detail">
+                    <i class="bx bxs-phone"></i>
+                    <div class="detail">
+                        <p>Phone Number</p>
+                        <p>(+62) 896 0844 6726</p>
+                    </div>
+                </div>
+                <div class="medsos-detail">
+                    <i class="bx bxs-envelope"></i>
+                    <div class="detail">
+                        <p>E-Mail</p>
+                        <p>iharukax@gmail.com</p>
+                    </div>
+                </div>
+                <div class="medsos-detail">
+                    <i class="bx bxs-map"></i>
+                    <div class="detail">
+                        <p>Alamat</p>
+                        <p>KP. PAJAGAN, DESA. BENDA, KEC. CICURUG, RT 01/11</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact" class="contact-form">
+                <h2>Contact Me</h2>
+                <form id="myform">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+        
+            <div id="message-display" class="message-display">
+                <div class="message-content">
+                    <span class="close-message">&times;</span>
+                    <h3>Message Details</h3>
+                    <div id="message-details"></div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <a href="#" id="back-to-top" class="back-to-top">&#8593;</a>
 
     <footer>
         <div class="container">
