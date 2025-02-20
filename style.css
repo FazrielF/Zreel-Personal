@@ -166,46 +166,6 @@ section.visible {
     cursor: pointer;
 }
 
-/* Background Section */
-.background {
-    background-color: #253745;
-    color: white;
-    position: relative;
-}
-
-.background h2 {
-    text-align: center; 
-    margin-bottom: 20px; 
-    position: absolute; 
-    top: 75px; 
-    left: 50%; 
-    transform: translateX(-50%); 
-    font-size: 2rem; 
-    z-index: 1; 
-}
-
-.pendidikan {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-}
-
-.sekolah {
-    flex: 1;
-    margin: 10px;
-    text-align: center;
-    padding: 20px;
-    border: 2px solid #182e3f;
-    border-radius: 10px;
-    background-color: #11212D;
-}
-
-.sekolah img {
-    width: 250px; 
-    height: 250px;
-    border-radius: 3%;
-}
-
 /* Project Section */
 .project {
     background-color: #11212D;
