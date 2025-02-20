@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #11212D;
+    padding: 7px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Section */
+section {
+    padding: 20px 0;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Home Section */
+.hero {
+    background-color: #253745;
+    padding: 20px 0;
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.hero-content {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#nama {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 0.5rem 0.1rem;
+}
+
+.hero-img img {
+    height: 500px;
+    width: 400px;
+    border-radius: 10%;
+}
+
+.hero-img{
+    display: flex;
+    justify-content: center;
+}
+
+.text-content {
+    color: white;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.start-btn {
+    position: absolute;
+    bottom: -75px;
+    left: 250px;
+    padding: 10px 20px;
+    background-color: #4A5C6A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* About Section */
+.about {
+    background-color: #11212D;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: white;
+}
+
+.img-about {
+    display: flex;
+    justify-content: center;
+}
+
+.img-about img {
+    height: 500px;
+    width: 400px;
+    border-radius: 7%;
+}
+
+.about-text {
+    max-width: 500px;
+    margin-left: 40px;
+}
+
+.profile-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4A5C6A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Background Section */
+.background {
+    background-color: #253745;
+    color: white;
+}
+
+.pendidikan {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sekolah {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.sekolah img {
+    width: 250px; 
+    height: 250px;
+}
+
+/* Project Section */
+.project {
+    background-color: #11212D;
+    color: white;
+}
+
+.project-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x: auto;
+    padding: 20px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
+}
+
+.project-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.project-item {
+    background-color: #253745;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 300px;
+    flex: 0 0 auto;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-item img {
+    height: 250px;
+    width: 250px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.project-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4A5C6A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #0a131b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Button Hover Effects */
+button:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}  
