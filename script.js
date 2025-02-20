@@ -75,30 +75,6 @@ messageDisplay.addEventListener('click', (e) => {
     }
 });
 
-const projectItems = document.querySelectorAll('.project-item');
-const modal = document.getElementById('project-modal');
-const modalTitle = document.getElementById('modal-title');
-const modalDescription = document.getElementById('modal-description');
-const closeModalBtn = document.querySelector('.close-modal');
-
-projectItems.forEach(item => {
-    item.addEventListener('click', () => {
-        modalTitle.textContent = item.querySelector('h3').textContent;
-        modalDescription.textContent = item.querySelector('p').textContent;
-        modal.style.display = 'block';
-    });
-});
-
-closeModalBtn.addEventListener('click', () => {
-    modal.style.display = 'none';
-});
-
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = 'none';
-    }
-}
-
 const backToTopBtn = document.getElementById('back-to-top');
 
 window.onscroll = function() {
