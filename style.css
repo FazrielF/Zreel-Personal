@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --whiteline: #1f7cdf;
+    --blueline: #1a6db6;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -44,23 +49,6 @@ header nav a {
     color: white;
     text-decoration: none;
     font-size: 20px;
-}
-
-/* Section */
-section {
-    padding: 20px 0;
-    height: 700px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-section.visible {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 /* Home Section */
@@ -104,22 +92,14 @@ section.visible {
     font-size: 2.5em;
     margin-bottom: 20px;
 }
-
-.start-btn {
-    position: absolute;
-    bottom: -75px;
-    left: 250px;
-    padding: 10px 20px;
-    background-color: #4A5C6A;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
 /* About Section */
 .about {
     background-color: #253745;
+    padding: 20px 0;
+    height: 720px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-content {
@@ -130,6 +110,10 @@ section.visible {
     margin: 0 auto;
     padding: 0 20px;
     color: white;
+}
+
+span {
+    color: #1f7cdf;
 }
 
 .img-about {
@@ -160,16 +144,25 @@ section.visible {
     margin-top: 20px;
     padding: 10px 20px;
     background-color: #4A5C6A;
-    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.profile-btn a {
+    text-decoration: none;
+    color: white;
 }
 
 /* Project Section */
 .project {
     background-color: #11212D;
     color: white;
+    padding: 20px 0;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .project-container {
@@ -214,10 +207,14 @@ section.visible {
     margin: 20px auto;
     padding: 10px 20px;
     background-color: #4A5C6A;
-    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.project-btn a {
+    text-decoration: none;
+    color: white;
 }
 
 /* Footer */
@@ -406,3 +403,133 @@ input[type="submit"]:hover {
   #message-details strong {
     color: #333;
   }
+
+/* Index Pages END */
+
+/* About Pages Start */
+
+/* Data Diri Section */
+  .data-diri {
+    padding: 20px 0;
+    height: 727px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #11212D;
+}
+
+.data-teks {
+    width: 820px;
+}
+
+.judul-data {
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+    color: #ddd;
+}
+
+.sub-data {
+    font-size: 20px;
+    color: #fefefe;
+}
+
+.teks-sekolah {
+    width: 400px;
+    margin-left: 75px;
+}
+
+.nav-education {
+    color: #ddd;
+    font-size: 1.3rem;
+    border-bottom: 2px solid var(--blueline);
+}
+
+.sekolah-wow {
+    margin-bottom: 0.8rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sekolah-wow:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.nama-smk {
+    color: #ffffffbc;
+    padding-top: 20px;
+}
+
+.nama-sekolah {
+    color: #ffffffbc;
+}
+
+.tahun-lulus{
+    color: #aaaaaa;
+    border-bottom: 3px solid var(--whiteline);
+} 
+
+  /* Skills Section */
+.skills {
+    padding: 4rem 2rem;
+    background: #11212df4;
+}
+  
+.skill-card {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+  
+.skill-card h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    color: #fefefe;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
+  
+.logo {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background: #f8f9fae7;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #333;
+}
+  
+.logo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+  
+.skill-img {
+    width: 50px;
+    margin-bottom: 1rem;
+}
+  
+.skill-title {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+  
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+  
+.progress {
+    height: 100%;
+    background: #007bff;
+    border-radius: 5px;
+    transition: width 1s ease-in-out;
+}
+
+/* About Pages END */
+/* Project Pages Start */
