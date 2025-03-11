@@ -102,6 +102,13 @@ font-family: 'Georgia', serif;
 color: #fefefe;
 margin-bottom: 20px;
 }
+
+.artikel img {
+    height: 250px;
+    width: 500px;
+    margin-top: 0.6rem;
+    margin-bottom: 1.4rem;
+}
     
 .artikel p {
 font-size: 18px;
@@ -109,12 +116,55 @@ font-family: 'Arial', sans-serif;
 line-height: 1.6;
 color: #edebeb;
 }
-
-
  
 footer {
 background-color: #0a131b;
 color: white;
 text-align: center;
 padding: 20px;
+}
+
+.calc-mtk {
+    text-align: center;
+    padding: 150px;
+    height: 720px;
+}
+
+.calc-mtk h1 {
+    margin-bottom: 15px;
+    color: #edebeb;
+}
+
+.kalkulator {
+    display: none;
+    margin-top: 20px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 200px;
+    margin: auto;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+#sains-display {
+    width: 325px;
+}
+
+.sub-kalkulator {
+    display: none;
+    margin-top: 20px;
 }
