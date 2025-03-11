@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="kepala">
+            <h1><a href="/project.html">Zre<span>el</span></a></h1>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li>
+                        <a href="/project.html">Project <i class="bx bx-chevron-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="#mtk.html">Matematika</a></li>
+                            <li><a href="sunda.html">Sunda</a></li>
+                            <li><a href="sejarah.html">Sejarah</a></li>
+                            <li><a href="pipas.html">PIPAS</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="calc-mtk">
+        <div class="container"><h1>Pilih Kalkulator</h1>
+            <button onclick="showCalculator('sains')">Kalkulator Sains</button>
+            <button onclick="showCalculator('suku')">Kalkulator Suku</button>
+    
+            <div id="kalkulator-sains" class="kalkulator">
+                <h2>Kalkulator Sains</h2>
+                <input type="text" id="sains-display" numberonly>
+                <div class="buttons">
+                    <button onclick="clearDisplay()">C</button>
+                    <button onclick="appendValue('1')">1</button>
+                    <button onclick="appendValue('2')">2</button>
+                    <button onclick="appendValue('3')">3</button>
+                    <button onclick="appendValue('4')">4</button>
+                    <button onclick="appendValue('5')">5</button>
+                    <button onclick="appendValue('6')">6</button>
+                    <button onclick="appendValue('7')">7</button>
+                    <button onclick="appendValue('8')">8</button>
+                    <button onclick="appendValue('9')">9</button>
+                    <button onclick="appendValue('0')">0</button>
+                    <button onclick="appendValue('.')">.</button>
+                    <button onclick="appendValue('+')">+</button>
+                    <button onclick="appendValue('-')">-</button>
+                    <button onclick="appendValue('*')">×</button>
+                    <button onclick="appendValue('/')">÷</button>
+                    <button onclick="appendValue('sin(')">sin</button>
+                    <button onclick="appendValue('cos(')">cos</button>
+                    <button onclick="appendValue('tan(')">tan</button>
+                    <button onclick="appendValue('log(')">log</button>
+                    <button onclick="appendValue('^')">xⁿ</button>
+                    <button onclick="calculate()">=</button>
+                </div>
+            </div>
+    
+            <div id="kalkulator-suku" class="kalkulator">
+                <h2>Kalkulator Suku</h2>
+                <label>Pilih Jenis Kalkulator:</label>
+                <select id="jenis-kalkulator" onchange="changeKalkulator()">
+                    <option value="aritmatika">Aritmatika</option>
+                    <option value="geometri">Geometri</option>
+                    <option value="tak-terbatas">Tak Terbatas</option>
+                </select>
+                <div id="aritmatika" class="sub-kalkulator">
+                    <label>Un = a + (n-1) * b</label>
+                    <input type="number" id="a" placeholder="Suku pertama (a)">
+                    <input type="number" id="b" placeholder="Beda (b)">
+                    <input type="number" id="n" placeholder="Suku ke-n">
+                    <button onclick="hitungAritmatika()">Hitung</button>
+                    <p>Hasil: <span id="hasil-aritmatika"></span></p>
+                </div>
+                <div id="geometri" class="sub-kalkulator">
+                    <label>Un = a * r^(n-1)</label>
+                    <input type="number" id="ag" placeholder="Suku pertama (a)">
+                    <input type="number" id="r" placeholder="Rasio (r)">
+                    <input type="number" id="ng" placeholder="Suku ke-n">
+                    <button onclick="hitungGeometri()">Hitung</button>
+                    <p>Hasil: <span id="hasil-geometri"></span></p>
+                </div>
+                <div id="tak-terbatas" class="sub-kalkulator">
+                    <label>S = a / (1 - r)</label>
+                    <input type="number" id="at" placeholder="Suku pertama (a)">
+                    <input type="number" id="rt" placeholder="Rasio (r)">
+                    <button onclick="hitungTakTerbatas()">Hitung</button>
+                    <p>Hasil: <span id="hasil-tak-terbatas"></span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="calc.js"></script>
+
+    <footer>
+        <div class="kaki">
+            <p>Personal Web Fazriel Faddilah &#169; 2024, SMK Wikrama Bogor</p>
+        </div>
+    </footer>
+</body>
+</html>
